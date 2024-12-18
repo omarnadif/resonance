@@ -1,0 +1,10 @@
+# Symfony
+/server/var/
+/server/vendor/
+/server/.env.local
+/server/.env.*
+
+# Nuxt 3
+/webui/.output/
+/webui/node_modules/
+/webui/.env.local
