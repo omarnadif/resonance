@@ -1,6 +1,6 @@
 
       const { defaultExtractor: createDefaultExtractor } = require('tailwindcss/lib/lib/defaultExtractor.js')
-      const { customSafelistExtractor, generateSafelist } = require("C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/@nuxt/ui/dist/runtime/utils/colors")
+      const { customSafelistExtractor, generateSafelist } = require("/home/loris/Projets/Resonance/resonance/webui/node_modules/@nuxt/ui/dist/runtime/utils/colors")
 
       const defaultExtractor = createDefaultExtractor({ tailwindConfig: { separator: ':' } })
 
@@ -14,8 +14,8 @@
         ],
         content: {
           files: [
-            "C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/@nuxt/ui/dist/runtime/components/**/*.{vue,mjs,ts}",
-            "C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/@nuxt/ui/dist/runtime/ui.config/**/*.{mjs,js,ts}"
+            "/home/loris/Projets/Resonance/resonance/webui/node_modules/@nuxt/ui/dist/runtime/components/**/*.{vue,mjs,ts}",
+            "/home/loris/Projets/Resonance/resonance/webui/node_modules/@nuxt/ui/dist/runtime/ui.config/**/*.{mjs,js,ts}"
           ],
           transform: {
             vue: (content) => {

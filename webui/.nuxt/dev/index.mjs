@@ -1,35 +1,35 @@
-import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { mkdirSync } from 'node:fs';
+import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, eventHandler, getResponseStatus, setResponseHeaders, setHeaders, sendRedirect, proxyRequest, createError, getQuery as getQuery$1, getRequestURL, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, getResponseStatusText } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/h3/dist/index.mjs';
 import { Server } from 'node:http';
+import { mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { parentPort, threadId } from 'node:worker_threads';
-import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, eventHandler, getResponseStatus, setResponseHeaders, setHeaders, sendRedirect, proxyRequest, createError, getQuery as getQuery$1, getRequestURL, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, getResponseStatusText } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/devalue/index.js';
-import destr from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/destr/dist/index.mjs';
-import { withQuery, joinURL, withTrailingSlash, parseURL, withoutBase, getQuery, joinRelativeURL } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/vue/server-renderer/index.mjs';
-import { propsToString, renderSSRHead } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/@unhead/ssr/dist/index.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/unhead/dist/index.mjs';
-import { klona } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/scule/dist/index.mjs';
-import { createHooks } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/hookable/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/unenv/runtime/fetch/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/devalue/index.js';
+import destr from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/destr/dist/index.mjs';
+import { withQuery, joinURL, withTrailingSlash, parseURL, withoutBase, getQuery, joinRelativeURL } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/vue/server-renderer/index.mjs';
+import { propsToString, renderSSRHead } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/@unhead/ssr/dist/index.mjs';
+import { createHooks } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/hookable/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/unenv/runtime/fetch/index.mjs';
+import { klona } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/scule/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/radix3/dist/index.mjs';
+import { getContext } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/unctx/dist/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/errx/dist/index.js';
-import { isVNode, version, unref } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/vue/index.mjs';
-import { basename } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/pathe/dist/index.mjs';
-import { getIcons } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/@iconify/utils/lib/index.mjs';
-import { hash } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/unstorage/drivers/fs.mjs';
-import { collections } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/.nuxt/nuxt-icon-server-bundle.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/radix3/dist/index.mjs';
-import { defineHeadPlugin } from 'file://C:/Users/OmarNadif/Desktop/resonance/webui/node_modules/@unhead/shared/dist/index.mjs';
+import { consola } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/consola/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/errx/dist/index.js';
+import { isVNode, version, unref } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/vue/index.mjs';
+import { basename } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/pathe/dist/index.mjs';
+import { getIcons } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/@iconify/utils/lib/index.mjs';
+import { hash } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/ohash/dist/index.mjs';
+import { collections } from 'file:///home/loris/Projets/Resonance/resonance/webui/.nuxt/nuxt-icon-server-bundle.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file:///home/loris/Projets/Resonance/resonance/webui/node_modules/@unhead/shared/dist/index.mjs';
 
 function hasReqHeader(event, name, includes) {
   const value = getRequestHeader(event, name);
@@ -175,13 +175,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _VgPOVWK7B4 = (function(nitro) {
+const _lg5GSBU22v = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script$1}<\/script>`);
   });
 });
 
-const rootDir = "C:/Users/OmarNadif/Desktop/resonance/webui";
+const rootDir = "/home/loris/Projets/Resonance/resonance/webui";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[]};
 
@@ -200,7 +200,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _us0alNBzXg = (nitroApp) => {
+const _vn8EHFCrS6 = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -271,16 +271,16 @@ function onConsoleLog(callback) {
 
 const script = "\"use strict\";(()=>{const t=window,e=document.documentElement,c=[\"dark\",\"light\"],n=getStorageValue(\"localStorage\",\"nuxt-color-mode\")||\"system\";let i=n===\"system\"?u():n;const r=e.getAttribute(\"data-color-mode-forced\");r&&(i=r),l(i),t[\"__NUXT_COLOR_MODE__\"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.add(s):e.className+=\" \"+s,a&&e.setAttribute(\"data-\"+a,o)}function d(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,\"g\"),\"\"),a&&e.removeAttribute(\"data-\"+a)}function f(o){return t.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function u(){if(t.matchMedia&&f(\"\").media!==\"not all\"){for(const o of c)if(f(\":\"+o).matches)return o}return\"light\"}})();function getStorageValue(t,e){switch(t){case\"localStorage\":return window.localStorage.getItem(e);case\"sessionStorage\":return window.sessionStorage.getItem(e);case\"cookie\":return getCookie(e);default:return null}}function getCookie(t){const c=(\"; \"+window.document.cookie).split(\"; \"+t+\"=\");if(c.length===2)return c.pop()?.split(\";\").shift()}";
 
-const _www7zQnzTc = (function(nitro) {
+const _qWs3kee3AP = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _VgPOVWK7B4,
-_us0alNBzXg,
-_www7zQnzTc
+  _lg5GSBU22v,
+_vn8EHFCrS6,
+_qWs3kee3AP
 ];
 
 const inlineAppConfig = {
@@ -627,7 +627,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/OmarNadif/Desktop/resonance/webui/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/home/loris/Projets/Resonance/resonance/webui/server/assets"}];
 
 const assets = createStorage();
 
@@ -639,11 +639,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\OmarNadif\\Desktop\\resonance\\webui","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\OmarNadif\\Desktop\\resonance\\webui\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\OmarNadif\\Desktop\\resonance\\webui\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\OmarNadif\\Desktop\\resonance\\webui\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\OmarNadif\\Desktop\\resonance\\webui\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/loris/Projets/Resonance/resonance/webui","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/loris/Projets/Resonance/resonance/webui/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/loris/Projets/Resonance/resonance/webui/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/loris/Projets/Resonance/resonance/webui/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/home/loris/Projets/Resonance/resonance/webui/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1080,6 +1080,11 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
+getContext("nitro-app", {
+  asyncContext: false,
+  AsyncLocalStorage: void 0
+});
+
 const r=Object.create(null),i=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return i()[o]??r[o]},has(e,o){const E=i();return o in E||o in r},set(e,o,E){const b=i(!0);return b[o]=E,!0},deleteProperty(e,o){if(!o)return !1;const E=i(!0);return delete E[o],!0},ownKeys(){const e=i(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",B=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"],["DENO-DEPLOY","DENO_DEPLOYMENT_ID"],["FIREBASE_APP_HOSTING","FIREBASE_APP_HOSTING",{ci:!0}]];function p(){if(globalThis.process?.env)for(const e of B){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=p(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const A=t==="test"||n(s.TEST);n(s.MINIMAL)||T||A||!R;const _=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||_)&&s.TERM!=="dumb"||T);const C=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(C?.split(".")[0])||null;const y=globalThis.process||Object.create(null),c={versions:{}};new Proxy(y,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const L=globalThis.process?.release?.name==="node",a=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,P=globalThis.navigator?.userAgent==="Cloudflare-Workers",F=[[S,"netlify"],[N,"edge-light"],[P,"workerd"],[O,"fastly"],[D,"deno"],[a,"bun"],[L,"node"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const u=G();u?.name||"";
 
 const scheduledTasks = false;
@@ -1133,7 +1138,7 @@ function publicAssetsURL(...path) {
 
 const warnOnceSet = /* @__PURE__ */ new Set();
 const DEFAULT_ENDPOINT = "https://api.iconify.design";
-const _Tp5Gtt = defineCachedEventHandler(async (event) => {
+const _CrMgun = defineCachedEventHandler(async (event) => {
   const url = getRequestURL(event);
   if (!url)
     return createError({ status: 400, message: "Invalid icon request" });
@@ -1191,12 +1196,12 @@ const _Tp5Gtt = defineCachedEventHandler(async (event) => {
   // 1 week
 });
 
-const _lazy_pjL6Et = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_78jjtL = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_pjL6Et, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_nuxt_icon/:collection', handler: _Tp5Gtt, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_pjL6Et, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_78jjtL, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_nuxt_icon/:collection', handler: _CrMgun, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_78jjtL, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -1461,8 +1466,8 @@ const renderSSRHeadOptions = {"omitLineBreaks":false};
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://C:/Users/OmarNadif/Desktop/resonance/webui/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://C:/Users/OmarNadif/Desktop/resonance/webui/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file:///home/loris/Projets/Resonance/resonance/webui/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file:///home/loris/Projets/Resonance/resonance/webui/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
